@@ -6,7 +6,7 @@ from scipy.cluster.hierarchy import dendrogram, linkage
 from scipy.spatial.distance import euclidean, cityblock, cosine
 
 # Generate sample data
-X, _ = make_blobs(n_samples=300, centers=4, cluster_std=0.60, random_state=123)
+X, _ = make_blobs(n_samples=300, centers=4, cluster_std=0.60, random_state=0)
 
 # Perform KMeans clustering
 kmeans = KMeans(n_clusters=4, random_state=0)
